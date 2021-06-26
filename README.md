@@ -113,6 +113,8 @@ Character escape was not used in email regex example.
 
 ## Author
 
-Jung Nam  
+Jung Nam
+
 https://gist.github.com/jung0808/015f5876080d8e8279dded154904410f
+
 https://github.com/jung0808/homework-17-regex-tutorial
