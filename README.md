@@ -49,9 +49,17 @@ Additional quantifier in this example is {2,6}. This quanitifer lets match range
 
 ### Grouping Constructs
 
+In our email matching regex expression, you can divide the "sequence" into 3 groups.
+
+    Group #1: [a-z0-9_\.-]+) || This first group will match the user's email name before @ domain address.
+    Group #2: [\da-z\.-] || This second group will match the user's email domain or service they are using; such as @google or @yahoo
+    Group #3: [a-z\.]{2,6}. || This third will cover the ending of an email address; such as ".com or .net, etc..."
+
 ### Bracket Expressions
 
 ### Character Classes
+
+The character class in this expression is \d, which matches a single characters that is a digit from 0-9. It will only match a single digit such as "4", but not "44".
 
 ### The OR Operator
 
