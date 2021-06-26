@@ -57,6 +57,19 @@ In our email matching regex expression, you can divide the "sequence" into 3 gro
 
 ### Bracket Expressions
 
+Bracket expressions is defined as following:  
+"A bracket expression is either a matching list expression or a non matching list expression. It consists of one or more expressions: ordinary characters, collating elements, collating symbols, equivalence classes, character classes, or range expressions."
+
+Bracket expressions for this code:
+
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+In our email matching regex expression, Bracket expression includes the following character set `[a-z0-9_\.-]. This is matching any letter a-z (case sensitive) and numbers 0-9 and matches the characters "\_", ".", "."
+
+The [\da-z\.-], this is matching any character a-z (case sensitive) and numbers from 0-9, and characters ".", and "-".
+
+The [a-z\.] matches any characters a-z (case sensitive) and the "." character.
+
 ### Character Classes
 
 The character class in this expression is \d, which matches a single characters that is a digit from 0-9. It will only match a single digit such as "4", but not "44".
