@@ -1,9 +1,14 @@
-# Title (replace with your title)
+# Regex Tutorial Homework 17.
 
-Introductory paragraph (replace this with your text)
+## Introductory paragraph
+
+This is my homework-17 writing about Regex expressions.  
+I had an option of choosing between: Matching a hex value, Matching an email, Matching a URL, matching an HTML tag.  
+I have decided to explain and give tutorials on how to match an Email address using Regular expression.
 
 ## Summary
 
+According to MDN,
 Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
 
 ## Table of Contents
