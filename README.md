@@ -72,14 +72,47 @@ The [a-z\.] matches any characters a-z (case sensitive) and the "." character.
 
 ### Character Classes
 
-The character class in this expression is \d, which matches a single characters that is a digit from 0-9. It will only match a single digit such as "4", but not "44".
+Character classes ensures that a given sequence of characters matches a larger set of characters.
+
+\*\*\*The character class in this expression is \d, which matches a single characters that is a digit from 0-9. It will only match a single digit such as "4", but not "44".
 
 ### The OR Operator
 
+The OR operator in regex is used by the pipe "|". It will match expressions that come before and after in the code, however this is not the case in our email matching code.
+
 ### Flags
+
+According to Javascript.info they defined patterns and flags as following:  
+"Regular expressions are patterns that provide a powerful way to search and replace in text. In Javascript, they are available via the RegExp object, as well as being intergrated in methods of strings." Also it states that 6 flags are available in Javascript.
+
+i
+With this flag the search is case-insensitive: no difference between A and a (see the example below).
+
+g
+With this flag the search looks for all matches, without it – only the first match is returned.
+
+m
+Multiline mode (covered in the chapter Multiline mode of anchors ^ $, flag "m").
+
+s
+Enables “dotall” mode, that allows a dot . to match newline character \n (covered in the chapter Character classes).
+
+u
+Enables full Unicode support. The flag enables correct processing of surrogate pairs. More about that in the chapter Unicode: flag "u" and class \p{...}.
+
+y
+“Sticky” mode: searching at the exact position in the text (covered in the chapter Sticky flag "y", searching at position)
+
+However in our code, no flags were used in email matching regex example.
 
 ### Character Escapes
 
+The backslash in a regular expression precedes a literal character. You also escape certain letters that represent common character classes, such as `\w` for a word character or `\s` for a space.
+
+Character escape was not used in email regex example.
+
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Jung Nam  
+https://gist.github.com/jung0808/015f5876080d8e8279dded154904410f
+https://github.com/jung0808/homework-17-regex-tutorial
