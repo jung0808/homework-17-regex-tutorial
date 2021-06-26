@@ -40,6 +40,13 @@ The rest of the code inside the opening and closing anchors is where the action 
 
 ### Quantifiers
 
+According to MDN, quantifiers is defined as "Indicate numbers of characters or expressions to match. In our email matching case, the quantifier in this regex includes the + operator.  
+The + operator will connect useers email name + email domain/address + .com.
+
+Additional quantifier in this example is {2,6}. This quanitifer lets match range of 2 - 6 characters for the character set of [a-z\.].
+
+`Matching an Email: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
 ### Grouping Constructs
 
 ### Bracket Expressions
