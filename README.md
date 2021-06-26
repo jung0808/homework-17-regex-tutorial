@@ -29,6 +29,15 @@ Email matching regex. This is what I'll be using to do this HW.
 
 ### Anchors
 
+According to rexegg.com, it defines anchors as following: "Anchors belong to the family of regex tokens that don't match any characters, but that assert something about the string or the matching process. Anchors assert that the engine's current position in the string matches a well-determined location: for instance, the beginning of the string, or the end of a line."
+
+Anchors represent a position at the beginning and at the end of the text. In this case, it would be `^` and `$`.
+
+    ^ is the anchor at the beginning of input.
+    $ is the end of the input.
+
+The rest of the code inside the opening and closing anchors is where the action happens (Matching email address).
+
 ### Quantifiers
 
 ### Grouping Constructs
